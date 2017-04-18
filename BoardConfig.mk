@@ -23,7 +23,7 @@
 #
 
 # Inherit from sdm660-common
--include device/xiaomi/sdm660-common/BoardConfigCommon.mk
+include device/xiaomi/sdm660-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/whyred
 
@@ -57,4 +57,4 @@ TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
 BOARD_VENDOR_PLATFORM := xiaomi-sdm660
 
 # Inherit the proprietary files
--include vendor/xiaomi/whyred/BoardConfigVendor.mk
+include vendor/xiaomi/whyred/BoardConfigVendor.mk
