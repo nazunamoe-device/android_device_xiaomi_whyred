@@ -16,4 +16,7 @@
     <bool name="config_haveHigherAspectRatioScreen">true</bool>
 
     <bool name="config_defaultCABC">false</bool>
+
+    <integer name="config_deviceLightCapabilities">232</integer>
+
 </resources>
