@@ -37,6 +37,9 @@ TARGET_SCREEN_WIDTH := 1080
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
 
+# Density
+TARGET_SCREEN_DENSITY := 320
+
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
 TARGET_KERNEL_CONFIG := whyred_defconfig
