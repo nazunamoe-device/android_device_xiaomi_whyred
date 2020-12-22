@@ -33,6 +33,9 @@ $(call inherit-product, $(DEVICE_PATH)/properties.mk)
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
 
+# APEX
+ENABLE_APEX := true
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec.xml \
