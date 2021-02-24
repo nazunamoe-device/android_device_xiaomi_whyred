@@ -65,3 +65,9 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
 # Inherit the proprietary files
 -include vendor/xiaomi/whyred/BoardConfigVendor.mk
+
+# Vendor Security patch level
+VENDOR_SECURITY_PATCH := 2020-08-05
+
+# WLAN MAC
+WLAN_MAC_SYMLINK := true
