@@ -56,9 +56,5 @@ TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
 # Platform
 BOARD_VENDOR_PLATFORM := xiaomi-sdm660
 
-# SELinux
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
-
 # Inherit the proprietary files
 -include vendor/xiaomi/whyred/BoardConfigVendor.mk
