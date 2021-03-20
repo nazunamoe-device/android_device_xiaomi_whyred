@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018-2019 The LineageOS Project
+# Copyright (C) 2018 The Xiaomi-SDM660 Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,7 +12,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
 #
 # This file sets variables that control the way modules are built
@@ -22,17 +21,13 @@
 # definition file).
 #
 
-# Inherit from sdm660-common
--include device/xiaomi/sdm660-common/BoardConfigCommon.mk
+include device/xiaomi/sdm660-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/xiaomi/whyred
+# Device Path
+DEVICE_PATH := device/xiaomi/clover
 
-# Assert
-TARGET_OTA_ASSERT_DEVICE := whyred
-
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2160
-TARGET_SCREEN_WIDTH := 1080
+# DT2W
+TARGET_TAP_TO_WAKE_NODE := "/proc/touchscreen/enable_dt2w"
 
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
@@ -45,29 +40,14 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
 TARGET_KERNEL_CONFIG := whyred_defconfig
 
 # Manifest
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/manifest.xml
-
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472
-BOARD_VENDORIMAGE_PARTITION_SIZE := 838860800
-
-# Security patch level
-VENDOR_SECURITY_PATCH := 2018-11-01
-
-# DT2W
-TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Platform
 BOARD_VENDOR_PLATFORM := xiaomi-sdm660
-
-# SELinux
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
-
-# Inherit the proprietary files
--include vendor/xiaomi/whyred/BoardConfigVendor.mk
 
 # Vendor Security patch level
 VENDOR_SECURITY_PATCH := 2020-08-05
 
 # WLAN MAC
 WLAN_MAC_SYMLINK := true
+
