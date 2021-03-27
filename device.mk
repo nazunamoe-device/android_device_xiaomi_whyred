@@ -37,7 +37,7 @@ PRODUCT_SOONG_NAMESPACES += \
 ENABLE_APEX := true
 
 # Camera
-$(call inherit-product-if-exists, vendor/GoogleCamera/camera.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/MiuiCamera/Android.mk)
 
 # Audio
 PRODUCT_COPY_FILES += \
