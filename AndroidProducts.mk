@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_whyred.mk
+    $(LOCAL_DIR)/cygnus_whyred.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_whyred-user \
-    arrow_whyred-userdebug \
-    arrow_whyred-eng
+    cygnus_whyred-user \
+    cygnus_whyred-userdebug \
+    cygnus_whyred-eng
