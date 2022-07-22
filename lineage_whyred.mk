@@ -38,3 +38,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
+
+# Official
+RICE_OFFICIAL := false
+RICE_MAINTAINER := nazunamoe
