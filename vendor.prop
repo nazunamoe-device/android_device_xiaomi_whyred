@@ -26,3 +26,6 @@ persist.vendor.s5k3l8_ofilm.low.lux=379
 persist.vendor.camera.enableAdvanceFeatures=0x347
 persist.camera.max.previewfps=60
 persist.vendor.camera.max.previewfps=60
+
+# Radio
+persist.radio.multisim.config=dsds
