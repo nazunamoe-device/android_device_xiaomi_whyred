@@ -17,7 +17,6 @@ TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_DENSITY := 420
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
 TARGET_KERNEL_CONFIG := whyred_defconfig
 
 # Manifest
