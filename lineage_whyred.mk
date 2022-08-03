@@ -26,9 +26,9 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 TARGET_VENDOR_PRODUCT_NAME := whyred
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="whyred-user 8.1.0 OPM1.171019.011 V9.5.11.0.OEIMIFA release-keys"
+    PRIVATE_BUILD_DESC="raven-user 12 SQ3A.220705.004.A1 8847371 release-keys" 
 
-BUILD_FINGERPRINT := xiaomi/whyred/whyred:8.1.0/OPM1.171019.011/V9.5.11.0.OEIMIFA:user/release-keys
+BUILD_FINGERPRINT := "google/raven/raven:12/SQ3A.220705.004.A1/8847371:user/release-keys"
 
 # Boot Animation
 SUSHI_BOOTANIMATION := 1080
