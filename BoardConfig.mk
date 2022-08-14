@@ -101,7 +101,8 @@ BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_SOURCE := kernel/xiaomi/whyred
-TARGET_KERNEL_CONFIG := vendor/whyred_defconfig
+TARGET_KERNEL_CONFIG := vendor/bouquet_defconfig
+TARGET_KERNEL_CONFIG += vendor/whyred.config
 TARGET_KERNEL_VERSION := 4.19
 
 # Partitions
